@@ -29,8 +29,6 @@ from webob.util import strings_differ
 __all__ = ['Cookie', 'CookieProfile', 'SignedCookieProfile', 'SignedSerializer',
            'JSONSerializer', 'Base64Serializer', 'make_cookie']
 
-_marker = object()
-
 class RequestCookies(collections.MutableMapping):
 
     _cache_key = 'webob._parsed_cookies'
